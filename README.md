@@ -5,7 +5,7 @@
 
 - 🔭 I’m currently working on **Kick-Mobile-App**
 
-- 🌱 I’m currently learning **AWS Developer Associate Certificate**
+- 🌱 I’m currently learning **AWS DevOps Professional Certificate**
 
 - 💬 Ask me about **React Native, TailwindCSS, JavaScript, Python**
 
