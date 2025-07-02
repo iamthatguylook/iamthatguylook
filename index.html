@@ -2,40 +2,329 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Your Name | Portfolio</title>
-		<link rel="stylesheet" href="css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vishv - Portfolio</title>
+		<link rel="icon" href="hacker-favicon.png" type="image/png" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
 	</head>
 	<body>
-		<header>
-			<h1>Your Name</h1>
-			<nav>
-				<a href="/">Home</a>
-				<a href="blog/index.html">Blog</a>
-				<a href="#projects">Projects</a>
-				<a href="#contact">Contact</a>
-			</nav>
-		</header>
+		<div id="loader">
+			<img
+				src="background.gif"
+				alt="Loading background"
+				class="background-gif"
+			/>
+			<div class="counter" id="counter">0%</div>
+		</div>
+		<nav class="navbar">
+			<div class="navbar-left">
+				<span class="logo">VISHV SINGH</span>
+			</div>
+			<div class="navbar-right">
+				<a href="#about-section">ABOUT</a>
+				<a href="https://medium.com/@vjsingh284" target="_blank">BLOG</a>
+				<a href="#project-section">PROJECTS</a>
+				<button class="resume-btn" onclick="openResume()">
+					<span>RESUME</span>
+				</button>
+			</div>
+		</nav>
 
-		<section id="about">
-			<h2>About Me</h2>
-			<p>Brief introduction about you...</p>
+		<section class="hero-section">
+			<div class="hero-left">
+				<p class="cursor typewriter-animation">YOU HAVE BEEN PWNED..</p>
+			</div>
+			<div class="hero-right">
+				<img
+					src="758X.gif"
+					alt="img3"
+					class="hero-img img2"
+					style="margin-right: 200px"
+				/>
+			</div>
+		</section>
+		<section id="about-section" class="about-section">
+			<div class="about-container">
+				<h2>About Me</h2>
+				<p>
+					My name is Vishv Singh, I'm a tech enthusiast with a background in
+					cybersecurity, software development, and IT support, blending
+					technical expertise with creative problem-solving. From building
+					secure web solutions to assisting clients on-site and online, I thrive
+					in fast-paced environments where I can learn, adapt, and make an
+					impact. I bring a hands-on, people-first approach to everything I do.
+					I'm always curious and always improving.
+				</p>
+				<div class="social-icons">
+					<a
+						href="https://github.com/iamthatguylook"
+						class="glow-icon"
+						target="_blank"
+						><i class="fab fa-github"></i
+					></a>
+					<a
+						href="mailto:vjsingh284@gmail.com"
+						class="glow-icon"
+						target="_blank"
+					>
+						<i class="fas fa-envelope"></i>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/vishv-s-9845721bb/"
+						class="glow-icon"
+						target="_blank"
+						><i class="fab fa-linkedin-in"></i
+					></a>
+				</div>
+			</div>
+		</section>
+		<section class="experience-section">
+			<h2>Experience</h2>
+			<div class="experience-timeline">
+				<div class="experience-item">
+					<div class="experience-summary">
+						<h3>SSRG</h3>
+						<p class="role">Concierge • Full-time</p>
+						<span class="duration">Dec 2023 – Present • Burnaby, BC</span>
+						<p class="desc-short">
+							Coordinated catering services and front desk duties.
+						</p>
+					</div>
+					<ul class="details-list">
+						<li>
+							Collaborated with internal teams and vendors to manage catering
+							services, ensuring protocol compliance.
+						</li>
+						<li>
+							Provided personalized client support and managed catering orders
+							from inquiry to delivery.
+						</li>
+					</ul>
+				</div>
+
+				<div class="experience-item">
+					<div class="experience-summary">
+						<h3>Argent Alliances</h3>
+						<p class="role">Web Developer • Freelancer</p>
+						<span class="duration">Aug 2022 – Sep 2022</span>
+						<p class="desc-short">
+							Built a full website under a tight deadline to support business
+							operations.
+						</p>
+					</div>
+					<ul class="details-list">
+						<li>
+							Designed and secured a startup website, supporting daily
+							operations.
+						</li>
+						<li>
+							Built and deployed a WordPress site with customized features for
+							performance and security.
+						</li>
+						<li>
+							Managed client needs efficiently in a fast-paced development
+							environment.
+						</li>
+					</ul>
+				</div>
+
+				<div class="experience-item">
+					<div class="experience-summary">
+						<h3>AlphaFit</h3>
+						<p class="role">
+							SEO Specialist / Social Media Marketer • Freelancer
+						</p>
+						<span class="duration">May 2022 – Jul 2022</span>
+						<p class="desc-short">
+							Planned and executed digital campaigns and SEO enhancements.
+						</p>
+					</div>
+					<ul class="details-list">
+						<li>
+							Led data-driven digital campaigns with comprehensive performance
+							reporting.
+						</li>
+						<li>Improved site performance with lazy-load implementation.</li>
+						<li>Enhanced SEO from 72% to 93% through keyword optimization.</li>
+					</ul>
+				</div>
+
+				<div class="experience-item">
+					<div class="experience-summary">
+						<h3>IO21 FZ LLC</h3>
+						<p class="role">Software Engineer • Internship</p>
+						<span class="duration">Jan 2022 – Apr 2022</span>
+						<p class="desc-short">
+							Supported software engineering in an Agile environment.
+						</p>
+					</div>
+					<ul class="details-list">
+						<li>
+							Wrote high-quality code and offered leadership and remote support.
+						</li>
+						<li>Maintained quality through thorough testing and teamwork.</li>
+						<li>
+							Worked with Django for backend and HTML/CSS for frontend
+							development.
+						</li>
+					</ul>
+				</div>
+
+				<div class="experience-item">
+					<div class="experience-summary">
+						<h3>University of Wollongong</h3>
+						<p class="role">Lab Assistant • Volunteering</p>
+						<span class="duration">Jun 2020 – Jun 2022 • Dubai</span>
+						<p class="desc-short">
+							Provided student support in Ethical Hacking and networking labs.
+						</p>
+					</div>
+					<ul class="details-list">
+						<li>
+							Troubleshot Kali Linux boot issues and supported wireless network
+							attack labs.
+						</li>
+						<li>
+							Assisted in configuring Cisco Packet Tracer assignments with DHCP
+							servers.
+						</li>
+						<li>
+							Helped with technical diagrams, prototyping tools, and project
+							showcases.
+						</li>
+					</ul>
+				</div>
+			</div>
 		</section>
 
-		<section id="projects">
+		<section id="project-section" class="projects-carousel-section">
 			<h2>Projects</h2>
-			<ul>
-				<li>🔧 Project 1 - <a href="#">Link</a></li>
-				<li>📱 Project 2 - <a href="#">Link</a></li>
-			</ul>
-		</section>
+			<div class="carousel-container">
+				<button class="carousel-btn left">&#10094;</button>
+				<div class="carousel-track">
+					<div class="project-card">
+						<a
+							href="https://github.com/iamthatguylook/iamthatguylook.git"
+							target="_blank"
+							><h3>Portfolio Website</h3>
+							<p>Clean portfolio built with HTML, CSS, JS.</p>
+							<span>Tech: HTML, CSS, JS</span></a
+						>
+					</div>
 
-		<section id="contact">
-			<h2>Contact</h2>
-			<p>Email: you@example.com</p>
-		</section>
+					<div class="project-card">
+						<a
+							href="https://github.com/iamthatguylook/Penetration-Testing-Notes"
+							target="_blank"
+							><h3>Penetration Testing Notes</h3>
+							<p>
+								Personal notes with commands and explaination for attacking
+								systems.
+							</p>
+							<span>Tech: Markdown</span></a
+						>
+					</div>
 
-		<footer>
-			<p>© 2025 Your Name</p>
+					<div class="project-card">
+						<a
+							href="https://github.com/iamthatguylook/Video-Chat-App.git"
+							target="_blank"
+							><h3>Video Chat Web Application</h3>
+							<p>ReactJs video chat app using WebRTC.</p>
+							<span>Tech: ReactJs</span></a
+						>
+					</div>
+					<div class="project-card">
+						<a
+							href="https://github.com/iamthatguylook/Deliveroo.git"
+							target="_blank"
+							><h3>Deliveroo</h3>
+							<p>Delivery app clone based on Deliveroo in UAE.</p>
+							<span>Tech: React Native, Expo.</span></a
+						>
+					</div>
+					<div class="project-card">
+						<a
+							href="https://github.com/iamthatguylook/instagram-youtube-scrapper.git"
+							target="_blank"
+							><h3>Instagram Youtube Scrapper</h3>
+							<p>
+								A bot that scraps videos from Instagram/Youtube and compiles it.
+							</p>
+							<span>Tech: Python, Selenium.</span></a
+						>
+					</div>
+					<div class="project-card">
+						<a
+							href="https://github.com/iamthatguylook/Specula.git"
+							target="_blank"
+						>
+							<h3>Specula</h3>
+							<p>AI proctoring system for university panel.</p>
+							<span>Tech: Flask, Django, OpenCV.</span>
+						</a>
+					</div>
+
+					<!-- Add more cards as needed -->
+				</div>
+				<button class="carousel-btn right">&#10095;</button>
+			</div>
+		</section>
+		<section class="certifications-section">
+			<h2>Certifications</h2>
+			<div class="cert-grid">
+				<div class="cert-card">
+					<img src="securityplus.webp" alt="Security+" />
+					<h3>CompTIA Security+</h3>
+					<span>Issued by CompTIA</span>
+					<a
+						href="https://www.credly.com/badges/e49ea210-c317-4a76-a342-c0cf760a7dc3/public_url"
+						target="_blank"
+						>View Credential</a
+					>
+				</div>
+
+				<div class="cert-card">
+					<img src="aws-developer.png" alt="AWS Developer" />
+					<h3>AWS Developer – Associate</h3>
+					<span>Issued by Amazon</span>
+					<a
+						href="https://www.credly.com/badges/8c28e32c-8259-41c3-b064-9cb4cfbb0c0c/public_url"
+						target="_blank"
+						>View Credential</a
+					>
+				</div>
+				<div class="cert-card">
+					<img src="tryhackme.jpg" alt="Junior Pentester" />
+					<h3>Junior Pentester</h3>
+					<span>Issued by TryHackMe</span>
+					<a
+						href="https://www.linkedin.com/in/vishv-s-9845721bb/details/certifications/1722905035280/single-media-viewer/?profileId=ACoAADMptfQBKRjO_3BE_b7gAjvfp-Uq8JpVEoI"
+						target="_blank"
+						>View Credential</a
+					>
+				</div>
+				<div class="cert-card">
+					<img src="adattacks.webp" alt="HackTheBox" />
+					<h3>Active Directory - Enumeration & Attacks</h3>
+					<span>Issued by HackTheBox</span>
+					<a
+						href="https://academy.hackthebox.com/achievement/badge/9d182dc5-d62c-11ef-864f-bea50ffe6cb4"
+						target="_blank"
+						>View Credential</a
+					>
+				</div>
+				<!-- Add more badges -->
+			</div>
+		</section>
+		<footer class="site-footer">
+			<p>Made by Vishv</p>
 		</footer>
+
+		<script src="script.js"></script>
 	</body>
 </html>
